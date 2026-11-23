@@ -90,7 +90,7 @@ def shortest_path(source, target):
     If no possible path, returns None.
     """
 
-    node = Node(state=source) # state: person_id, action: movie_id
+    node = Node(state=source, parent=None, action=None)
     explored = set() # set of person_id
 
     frontier = QueueFrontier()
